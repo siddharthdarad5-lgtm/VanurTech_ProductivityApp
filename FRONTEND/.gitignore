@@ -1,0 +1,13 @@
+@"
+node_modules/
+.env
+.expo/
+.expo-shared/
+dist/
+web-build/
+.expo/web/
+expo-env.d.ts
+*.log
+BACKEND/node_modules/
+FRONTEND/node_modules/
+"@ | Set-Content -Path ".gitignore" -Encoding utf8 

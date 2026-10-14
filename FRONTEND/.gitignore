@@ -1,13 +1,35 @@
-@"
+
+# Node.js dependencies
 node_modules/
+**/node_modules/
+
+# Environment variables
 .env
+.env.*
+!.env.example
+
+# Expo
 .expo/
 .expo-shared/
+expo-env.d.ts
+
+# Build output
 dist/
 web-build/
-.expo/web/
-expo-env.d.ts
+build/
+
+# Logs and temporary files
 *.log
-BACKEND/node_modules/
-FRONTEND/node_modules/
-"@ | Set-Content -Path ".gitignore" -Encoding utf8 
+npm-debug.log*
+**/Temp/
+**/*.tmp
+
+# Archives
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Android debug keystore
+FRONTEND/android/app/debug.keystore
